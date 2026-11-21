@@ -2,7 +2,10 @@
 
 ## Zero-Hint Policy (CRITICAL)
 
-Every question must be answerable ONLY by someone who actually knows the material.
+For independent assessments, do not leak the answer through wording or options.
+Teaching and guided open-book viewing may use scaffolding; record that assistance
+and do not count it as independent mastery. This policy does not prohibit hints
+or worked examples when the learner asks for them.
 
 1. **Option descriptions**: NEVER reveal correctness
    - BAD: `label: "stderr"`, `description: "Error output stream used by Cloud Run for error classification"`
@@ -28,9 +31,11 @@ Every question must be answerable ONLY by someone who actually knows the materia
 
 ## Difficulty Balancing
 
-- Diagnostic: easy 40%, medium 40%, hard 20%
-- Weak-area drill: medium 30%, hard 70%
-- Review: all levels evenly
+Use prerequisite knowledge and observed performance, not a fixed hard-question
+quota. Diagnostics sample the relevant range without assuming prior teaching.
+For a weak area, first repair the identified gap with an accessible attempt, then
+increase difficulty and vary context. Review mixes retrieval with application;
+advanced transfer tasks are useful when prerequisites are demonstrated.
 
 ## Drilling Unresolved Concepts
 
@@ -62,7 +67,9 @@ not exact quotas. An independent delayed check is required for retained status.
 
 After grading:
 1. Update `concepts/{area}.md` — add/update concept rows + error notes
-2. Update dashboard — recalculate area stats from concept files
+2. Append actual evidence to `learning/events.jsonl`, update state and pending
+   activity per [learning-record.md](learning-record.md), then refresh dashboard
+   views and historical concept statistics without counting an event twice.
 3. Historical quiz accuracy badges (not mastery proof): 🟥 0-39% · 🟨 40-69% · 🟩 70-89% · 🟦 90-100% · ⬜ no data
 
 ## Language Rule

@@ -63,6 +63,12 @@ playback link if supported. YouTube verified IDs use a watch URL with `&t=<secon
 other platforms need verified syntax or original URL plus manual seek range.
 Keep times video-local, including hour components for long videos.
 
+Assign each selected range a lesson role (introduction, explanation, demonstration,
+practice support, or optional depth). Plan the prerequisite primer, what to notice,
+verified stop point, and post-view task. The teacher pauses for actual learner
+participation before progressing. A retrieval chunk is not automatically a clip
+assignment; inspect concept boundaries and prerequisites before selecting ranges.
+
 Raw caption interval coverage is not semantic completeness: gaps may be silence,
 and auto captions may be wrong. Report both index coverage flags and evidence
 limitations. Never call a whole playlist understood just because it was indexed.

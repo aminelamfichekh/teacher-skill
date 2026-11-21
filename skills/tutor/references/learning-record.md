@@ -31,6 +31,25 @@ nullable `next_review_at`, and `review_rationale`. Status is `not_started`,
 `learner_watch_ranges` is keyed by source ID with learner-reported intervals and
 event IDs. Teaching a segment does not imply the learner watched it.
 
+### Resuming an unfinished lesson
+
+For active lessons add optional fields inside `current` (schema version stays 1):
+`phase` (`objective`, `readiness`, `basics`, `viewing`, `retrieval`, `practice`,
+`repair`, `review`), `activity_id`, and `awaiting` (`viewing_report`,
+`learner_response`, or null). Missing fields in a legacy vault mean unknown, not
+completed. An active session checkpoint stores the exact pending prompt/task,
+activity ID, mode (teaching/open-book/closed-book), expected rubric kept separate
+from learner-facing answers, assigned source refs, and the next decision.
+
+Record a new viewing assignment as a `lesson` event with `data.action: assigned`,
+`activity_id`, phase, purpose/role, observation prompt, post-view task, pause point,
+and assigned source refs. It is not a `watch_report` or successful attempt. A watch
+report records what the learner actually says they watched and its provenance;
+an attempt references the activity ID and actual response/assistance. If viewing
+or response is still pending, keep it pending across conversations. The assigned
+end time never becomes `position_seconds` without evidence of actual position.
+Use a `plan_change` event for an explicit skip/format change and retain the gap.
+
 Each JSONL event has unique `event_id`, `session_id`, `recorded_at`, `type`,
 `objective_ids`, `source_refs`, and `data`. Types: `lesson`, `attempt`,
 `watch_report`, `review`, `correction`, `plan_change`. Source refs use `source_id`,

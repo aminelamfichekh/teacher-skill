@@ -36,6 +36,36 @@ selected ranges per source; don't count overlaps twice. Distinguish viewing time
 from estimated practice time. End with a concrete task to attempt after watching.
 Attach the relevant watch reference directly to each explanation or worked example.
 
+## Before / during / after assignment
+
+Give this information in concise learner-facing language, using actual evidence:
+
+```text
+Goal: <observable objective>
+Before watching: <essential terms/prerequisites, or why already prepared>
+Watch: <title / source ID and position>, <HH:MM:SS-HH:MM:SS>, <playback link>
+Purpose: <introduction / explanation / demonstration / practice support / optional depth>
+Look for: <specific change, causal link, decision, or step to notice>
+Pause at: <verified end or intermediate boundary>
+Afterward: <one retrieval, prediction, explanation, or application task>
+```
+
+Do not prefill these fields with guessed source content or times. Keep cue IDs and
+revision in the durable record; the visible citation can be compact with evidence
+details available on request. If a watch plan contains several clips, explain their
+order and prerequisites, but assign manageable work and wait at the next activity.
+An intermediate pause point must also come from inspected source content.
+
+Record the assigned source ranges separately from actual learner-reported watching
+and actual playhead. Ask for the task response or a simple completion report; no
+playback telemetry is assumed. After return, use the response to decide whether
+to explain, practise, revisit a specific interval, or progress. Never invent an
+answer or automatically grade the assignment on sending it.
+
+For closed-book retrieval, do not put the answer in the pre-task wording or display
+the answer key alongside it. For an open-book guided viewing task, make that mode
+explicit. If the learner needs a hint or reveal, provide it and record assistance.
+
 ## Evidence limits
 
 Untimed text supports line-based citations, not verified playback times. Request

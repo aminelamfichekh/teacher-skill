@@ -51,6 +51,30 @@ application rubric, required/optional objectives, retention plan, unresolved gap
 Keep verified playlist order alongside teaching order. Distinguish estimated
 study/practice time from actual source duration and reported watch time.
 
+### Lesson specification
+
+For each lesson in COURSE.md or a linked lesson note, supply:
+
+- Stable lesson/objective IDs, learner-facing outcome, and observable rubric.
+- Prerequisite objective IDs with their current evidence/unknown status.
+- A short basics primer: needed terms, purpose, simple model, cited concrete example.
+- Assigned source ranges with revision/locators and a role (`introduction`,
+  `explanation`, `demonstration`, `practice_support`, `optional_depth`).
+- Before/during/after viewing instructions: readiness, what to notice, exact stop,
+  and post-view prompt. Keep answer/rubric separate from a pending assessment.
+- A worked example where useful, guided practice, fresh independent application,
+  and likely repair options justified by actual source material.
+- Save point, next objective, and a provisional review plan.
+
+The default delivery is objective -> prerequisites -> essential basics -> purposeful
+viewing -> retrieval/discussion -> demonstration/practice -> targeted repair ->
+save/revisit. This is a lesson plan, not a message to dump on the learner at once.
+Skip unnecessary basics using evidence, allow a short visual preview when useful,
+and substitute cited reading/code demonstrations when no video is relevant.
+Five-minute retrieval chunks do not prescribe clip length or lesson boundaries.
+Do not fabricate an entire semester of detailed lesson content from unreviewed
+playlist titles: detailed plans for pending sources remain provisional.
+
 Initialize state as follows, replacing only verified fields:
 
 ```json
@@ -74,6 +98,14 @@ events. The tutor skill documents event fields, safe write/replay, and migration
 When tutor is unavailable, events still use unique event/session IDs, recorded_at,
 type, objective_ids, source_refs (ID, revision, locator), and data; append evidence
 before atomically replacing state and refreshing views. Never double-count IDs.
+
+When the first activity is assigned, optionally extend `current` with `phase`,
+`activity_id`, and `awaiting` (`viewing_report`, `learner_response`, or null).
+Store the exact pending prompt and assigned ranges in the session checkpoint.
+An assignment uses a `lesson` event with `data.action: assigned`; it must not
+create a viewing report, successful attempt, or advanced actual playhead.
+The learner's later response references that activity ID. Do not require these
+additive fields when reading older state; unknown remains unknown.
 
 ## Completion and handoff
 

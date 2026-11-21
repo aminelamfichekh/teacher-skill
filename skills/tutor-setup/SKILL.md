@@ -23,6 +23,11 @@ Invocation: `/tutor-setup [source-path-or-url]`.
 Read [learning-space.md](references/learning-space.md) for persistent data,
 course design, source evidence, and resume requirements. Add this layer to every
 new vault and migrate existing vaults without replacing notes or progress.
+Plan lessons around the adaptive objective -> prerequisites -> basics -> purposeful
+viewing -> retrieval/discussion -> demonstration/practice -> targeted repair ->
+save/revisit flow. Every assigned clip needs a purpose, observation prompt,
+verified stopping point and post-view task. Use equivalent readings/demonstrations
+for non-video sources; detailed lesson records are defined in learning-space.md.
 Never manufacture source content, learner facts, or completed work. Distinguish
 verified sources, supplemental explanations, proposed plans, and unresolved gaps.
 Source evidence requirements override any template that suggests unsupported

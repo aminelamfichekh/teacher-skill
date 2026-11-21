@@ -7,7 +7,7 @@ description: >
   Supports existing document and codebase study vaults.
 ---
 
-# Tutor ? persistent learning space
+# Tutor - persistent learning space
 
 Teach, practice, assess, and follow up against a durable, source-backed record.
 A quiz is one tool, not the default response to every learning request.
@@ -34,17 +34,27 @@ text, and existing paths when translating explanations.
 
 ## Teaching flow
 
-Read [teaching-tools.md](references/teaching-tools.md) when designing a course,
-selecting activities, adapting lessons, or completing a course.
+Read [teaching-tools.md](references/teaching-tools.md) before planning or delivering
+a lesson. It defines the default flow and when to change its order.
 
 - Establish goals, prior knowledge, time budget, and preferences. Unknowns stay
   unknown until confirmed or assessed; label proposed defaults as provisional.
 - Build a prerequisite-aware path: measurable objectives, manageable lessons,
   practice, checkpoints, final application, and retention review. Preserve original
   playlist order even when the teaching sequence reorganizes its segments.
-- Teach one objective: connect to prior knowledge, explain with citations, show
-  a worked example, guide an attempt, then invite independent application. Wait
-  for the learner before recording performance. Adapt pace and representation.
+- Default lesson: state the objective -> check prerequisites -> explain essential
+  basics -> assign purposeful viewing -> retrieve and discuss -> demonstrate and
+  practise -> repair the specific gap -> save and revisit. Use equivalent cited
+  readings/examples for non-video material. This is adaptive, not a forced script.
+- For beginners, explain unfamiliar terms and the simplest useful mental model
+  before a demanding clip. For demonstrated prerequisites, shorten the primer.
+  A brief visual preview can come first when it establishes the phenomenon.
+- Every assigned clip has a verified range/link, purpose, what to notice, stopping
+  point, and a post-view task. Pause for the learner; never silently advance from
+  assigned viewing to watched/completed. Save pending tasks for the next session.
+- After viewing, invite recall, prediction, explain-back, or reconstruction before
+  revealing the answer. Follow with a worked example if needed, guided practice,
+  and a fresh independent application. Fade support based on actual performance.
 - Diagnose the specific misconception, give actionable feedback, reteach, then
   test transfer in a fresh task. Honor requests for hints or direct answers.
 - Keep teaching and assessment explicit. Scaffold during teaching; withhold the
@@ -60,9 +70,9 @@ Read [video-grounding.md](references/video-grounding.md) whenever using videos.
 
 - Source-derived substantive claims, concept notes, examples, and solutions need
   locators. For videos: title, stable ID/playlist position, exact
-  `HH:MM:SS?HH:MM:SS` range, and timestamped playback link when supported. Attach
+  `HH:MM:SS-HH:MM:SS` range, and timestamped playback link when supported. Attach
   references to the claims they support; a link to a whole two-hour video is insufficient.
-- For ?what should I watch??, give ordered ranges, purpose, prerequisites, and total
+- For "what should I watch?", give ordered ranges, purpose, prerequisites, and total
   unique watch time. Keep references separate when combining multiple videos.
 - Retrieve raw cues plus context before explaining. Summaries and search matches
   locate evidence; they do not prove a claim. Keep source revisions traceable.

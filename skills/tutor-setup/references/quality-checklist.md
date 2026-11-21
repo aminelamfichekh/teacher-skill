@@ -18,6 +18,12 @@ Before reporting completion, verify every item in the relevant mode's section. F
 - [ ] Manifest, profile, course, state, event log, and resumable checkpoint present
 - [ ] Goals/preferences confirmed or labeled unknown/provisional
 - [ ] Prerequisites, activities, objective rubrics, final application, and review plan defined
+- [ ] Lessons follow the adaptive objective/readiness/basics/viewing/retrieval/practice/repair/review flow
+- [ ] Every assigned clip has a role, observation prompt, verified stop, and post-view task
+- [ ] Primers prepare beginners; evidence supports skips or a preview-first choice
+- [ ] Index windows are separate from semantic lesson/clip boundaries
+- [ ] Pending activities, exact prompts, and assigned ranges survive a session handoff
+- [ ] Assignments never become watched ranges, actual playhead, or successful attempts without evidence
 - [ ] Indexed, reviewed, taught, learner-reported watched, and mastered remain separate
 - [ ] No learner responses, scores, watch history, or prior sessions fabricated
 - [ ] Legacy records preserved; changed source locators marked stale until reverified
